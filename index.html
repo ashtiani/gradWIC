@@ -1,92 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type = 'text/javascript' src="test.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-	<script src="functions.js"></script>
-
-
 </head>
 <body>
 
-	<script>
-	window.fbAsyncInit = function() {
-		FB.init({
-			appId      : '1725085547782495',
-			xfbml      : true,
-			version    : 'v2.8'
-		});
-		FB.AppEvents.logPageView();
-	};
-
-
-	(function(d, s, id){
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) {return;}
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-
-	</script>
 
 
 
-	<div class="container">
-		<div id="shareBtn" class="btn btn-success clearfix">Show</div>
-		<div class="events-list"></div>
 
-	</div>
+		<div class="row">
+			<div class="col-s-12 col-sm-offset-2 ">
+				<ul class="event-list" id="placeholder">
 
-	<script>
-	document.getElementById('shareBtn').onclick = function() {
+						<li><img src="ca9ce1"></li>
 
-
-
-		var pageAccessToken = '1725085547782495|WqVV4TPMJ_43akU69-r82PXB9g0';
-		FB.api('/UCSDgradwic/events?fields=cover,id,start_time,name', {
-			access_token: pageAccessToken
-			//other parameters can go here aswell
-
-
-		}, function(response) {
-			var month = [ "Jan", "Feb", "Mar", "Apr","May","June", "Aug", "Sept", "Oct", "Nov", "Dec"];
-			var events = document.getElementsByClassName("events-list")[0];
-			var items = response.data;
-			for(var i = 0; i < items.length; i++) {
-
-
-				var h2 = document.createElement("h2");
-				var date = new Date(items[i].start_time);
-				h2.innerHTML = month[date.getMonth()]+ " " + date.getDate() + "th" ;
-
-				events.appendChild(h2);
-
-
-				var a = document.createElement('a');
-				var linkText = document.createTextNode(items[i].name);
-				a.appendChild(linkText);
-				a.title = items[i].name;
-				a.href = "http://facebook.com/"+items[i].id;
-				events.appendChild(a);
-
-				var img = document.createElement('img');
-				img.src = items[i].cover.source;
-				img.height = 80;
-				img.width = 80;
-
-				events.appendChild(img);
+				</ul>
+			</div>
+		</div>
 
 
 
-			}
-		});
-	}
-	</script>
+
 </body>
 </html>
