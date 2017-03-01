@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 		var output="";
 		var linkToEvent = "";
-
+        var placeName = "";
 		 for (var i in item) {
 			 output+="<li>";
 				 //output+="<li>Time : " + item[i].start_time + "<br/>Cover Link : " + item[i].cover.source + "</li>";
@@ -48,7 +48,14 @@ $(document).ready(function() {
 				//				output+= "<a href=\"" +"http://www.facebook.com/events/"+ item[i].id +"\">"+"<div class=\"info\">" + "<h2 class=\"title\">" + item[i].name + "</h2>"
 
 				output+= "<div class=\"info\">" + "<h2 class=\"title\">" + item[i].name + "</h2>"
-				output+= "<p class=\"desc\">"+item[i].place.name+"<br>"+"Time: "+timeStr.slice(11, 16)+"</p>"+"</div>"
+               
+                if(!item[i].place) {
+                    placeName = "TBD";
+                }
+                else {
+                    placeName = item[i].place.name;
+                }
+				output+= "<p class=\"desc\">"+placeName+"<br>"+"Time: "+timeStr.slice(11, 16)+"</p>"+"</div>"
 
 				output+="</li>";
 		 }
