@@ -17,6 +17,8 @@ $(document).ready(function() {
 			var monthList = [ "Jan", "Feb", "Mar", "Apr","May","June","July", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
 			var output="";
+
+
 			var linkToEvent = "";
 			var eventPlaceName = "";
 			var eventTime = "";
@@ -53,14 +55,14 @@ $(document).ready(function() {
 					output+= "<div class=\"info\">" + "<h2 class=\"title\">" + item[i].name + "</h2>"
 
 					if(!item[i].place)
-						eventPlaceName = "TBD";
+					eventPlaceName = "TBD";
 					else
-						eventPlaceName = item[i].place.name;
+					eventPlaceName = item[i].place.name;
 
 					if(!timeStr)
-						eventTime = "TBD";
+					eventTime = "TBD";
 					else
-						eventTime = timeStr.slice(11, 16);
+					eventTime = timeStr.slice(11, 16);
 
 
 
@@ -73,6 +75,52 @@ $(document).ready(function() {
 				}//end for loop
 			}
 			document.getElementById("placeholder").innerHTML=output;
+
+
+
+
+
+		});
+
+		var outputgallery="";
+
+		FB.api('/ucsdgradwic/photos?fields=images,link&type=uploaded', {
+			access_token: pageAccessToken
+		}, function(response) {
+			console.log(response);
+
+			var item = response.data;
+
+			var output="";
+
+			//for (var i in item) {
+			for (var i=0;i<6;i++) {
+
+				console.log(item[i].link);
+
+				//output+= "<p class=\"desc\">"+eventPlaceName+"<br>"+"Time: "+eventTime+"</p>"+"</div>"
+
+				//output+="<li>";
+
+				//output+="<div data-alt=\"img03\" data-description=\"<h3>Sky high</h3>\" data-max-width=\"1800\" data-max-height=\"1350\">";
+
+				//output+="<div data-src=\""+item[i].images[0].source+"\" data-min-width=\"300\"></div>";
+
+				//output+="</li>";
+
+				outputgallery+="<div class=\"col-lg-6 col-md-6 crop\">";
+				outputgallery+="<a href=\""+item[i].link+"\"><img src = \""+item[i].images[3].source+"\" style='width:90%; max-height:300px'  /></a></div>";
+
+
+				//output+="<img src=\""+item[i].images[0].source+"\" />";
+
+
+
+
+
+			}//end for loop
+
+			document.getElementById("gallery").innerHTML=outputgallery;
 
 		});
 

@@ -143,3 +143,21 @@ background-color: rgb(200, 200, 200);
 	left: 0px;
 	bottom: 0px;
 }
+
+
+/**crop images*/
+.crop {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+		max-height: 200px;
+		margin: 25px;
+
+}
+
+.crop img {
+		padding: 10px;
+    width: 200px;
+    height: 200px;
+		margin: 10px;
+}
