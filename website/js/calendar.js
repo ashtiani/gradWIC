@@ -109,7 +109,7 @@ $(document).ready(function() {
 				//output+="</li>";
 
 				outputgallery+="<div class=\"col-lg-6 col-md-6 crop\">";
-				outputgallery+="<a href=\""+item[i].link+"\"><img src = \""+item[i].images[3].source+"\" style='width:90%; max-height:300px'  /></a></div>";
+				outputgallery+="<a href=\""+item[i].link+"\"><img class=\"salam\"src = \""+item[i].images[4].source+"\" style='width:90%; max-height:300px'  /></a></div>";
 
 
 				//output+="<img src=\""+item[i].images[0].source+"\" />";
