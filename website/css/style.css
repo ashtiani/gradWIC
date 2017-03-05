@@ -595,10 +595,11 @@ background-color: rgb(200, 200, 200);
 /*calendar - end*/
 
 /*officers - start*/
+    /*
 #officers div > img {
     margin: 0px auto;
 }
-
+*/
 /*officers - end*/
     
 .nav-tabs > a,
