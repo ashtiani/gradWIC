@@ -637,3 +637,6 @@ background-color: rgb(200, 200, 200);
 .carousel-fade .carousel-control {
   z-index: 2;
 }
+.gallery-set{
+	padding-bottom: 20px;
+}
