@@ -172,7 +172,10 @@ section.success {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 900px) {
+	footer .vertical-line {
+	  border-left: thick solid #CA9CE1;
+	}
 
 }
 .floating-label-form-group {
@@ -240,9 +243,7 @@ footer .footer-above {
 footer .footer-col {
   margin-bottom: 50px;
 }
-footer .vertical-line {
-  border-left: thick solid #CA9CE1; 
-}
+
 footer .footer-below {
   padding: 25px 0;
   background-color: #b7b6c1;
