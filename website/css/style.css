@@ -599,6 +599,13 @@ background-color: rgb(200, 200, 200);
 
 /*calendar - end*/
 
+/*officers - start*/
+#officers div > img {
+    margin: 0px auto;
+}
+
+/*officers - end*/
+    
 .nav-tabs > a,
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
