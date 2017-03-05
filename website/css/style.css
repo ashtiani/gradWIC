@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
 }
 
+
 p {
 	color:#2A2A2A;
   font-size: 20px;
@@ -65,7 +66,7 @@ header .intro-text .skills {
   font-weight: 300;
 }
 @media (min-width: 768px) {
-	.carousel-inner{
+	.carousel{
 		padding-top: 100px;
 	}
   header .container {
@@ -446,7 +447,7 @@ fieldset[disabled] .btn-success.active {
     min-width: 110%;
 }
 
-.carousel h1 { 
+.carousel h1 {
   text-align: center;
   color: #FFF; /* this disagrees with a.hover though */
 }
@@ -605,10 +606,33 @@ background-color: rgb(200, 200, 200);
 }
 
 /*officers - end*/
-    
+
 .nav-tabs > a,
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
 	color: #685f74;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: .5;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
 }
