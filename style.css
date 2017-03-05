@@ -4,6 +4,7 @@ body {
 padding: 60px 0px;
 background-color: rgb(220, 220, 220);
 }
+/**crop images*/
 
 .event-list {
 list-style: none;
@@ -142,4 +143,10 @@ background-color: rgb(200, 200, 200);
 	position: absolute;
 	left: 0px;
 	bottom: 0px;
+}
+
+.salam > img {
+    padding-bottom: 50px;
+}
+
 }
