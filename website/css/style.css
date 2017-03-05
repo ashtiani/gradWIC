@@ -446,6 +446,11 @@ fieldset[disabled] .btn-success.active {
     min-width: 110%;
 }
 
+.carousel h1 { 
+  text-align: center;
+  color: #FFF; /* this disagrees with a.hover though */
+}
+
 .spacer {
     padding-top: 30px; /* define margin as you see fit */
 }
