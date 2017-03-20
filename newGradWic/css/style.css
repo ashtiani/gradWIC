@@ -3,6 +3,12 @@
     background-color: rgba(202, 156, 225, 0.5); /* #CA9CE1, 50% opacity */
 }
 
+/* font colors */
+.primary-purple {
+    color: #4F0E70;
+}
+
+
 /*calendar - start*/
 .event-list {
     list-style: none;
@@ -32,7 +38,8 @@
     display: inline-block;
     float: left;
 /*    width: 100%;*/
-    color: #828282;
+/*    color: #828282;*/
+    color: #4f4f4f;
     /*color: rgb(255, 255, 255);*/
     /*background-color: #ca9ce1;*/
     padding: 5px;
@@ -76,6 +83,7 @@
 /*    padding: 5px 10px 0px 10px;*/
 }
 .event-list > li > .info > .desc {
+    color: #4f4f4f;
     font-size: 13pt;
     font-weight: 600;
     margin: 0px;
@@ -94,7 +102,7 @@
     display: table-cell;
     cursor: pointer;
     /*color: #4F0E70;*/
-    /*color: rgb(30, 30, 30);*/
+/*    color: rgb(30, 30, 30);*/
     font-size: 11pt;
     font-weight: 300;
 }
