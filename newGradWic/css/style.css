@@ -1,142 +1,185 @@
+/* background colors */
+.bg-secondary {
+    background-color: rgba(202, 156, 225, 0.5); /* #CA9CE1, 50% opacity */
+}
+
 /*calendar - start*/
 .event-list {
-list-style: none;
-font-family: 'Lato', sans-serif;
-margin: 20px;
-padding: 0px;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    margin: 20px;
+    padding: 0px;
 }
 .event-list > li {
-
-background-color: rgb(255, 255, 255);
-box-shadow: 0px 0px 5px rgb(51, 51, 51);
-box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
-padding: 0px;
-margin: 0px 0px 20px;
+    background-color: #ebebeb;
+    /*background-color: rgb(255, 255, 255);*/
+    box-shadow: 0px 0px 5px rgb(51, 51, 51);
+    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+    padding: 0px;
+    margin: 0px 0px 15px;
+    position: relative;
+    display: block;
+    height: 130px;
+}
+.event-list > li > time,
+.event-list > li > img {
+    width: 120px;
+    height: 130px;
+    padding: 0px;
+    margin: 0px;
 }
 .event-list > li > time {
-display: inline-block;
-width: 100%;
-color: rgb(255, 255, 255);
-background-color: #ca9ce1;
-padding: 5px;
-text-align: center;
-text-transform: uppercase;
+    display: inline-block;
+    float: left;
+/*    width: 100%;*/
+    color: #828282;
+    /*color: rgb(255, 255, 255);*/
+    /*background-color: #ca9ce1;*/
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
 }
-.event-list > li:nth-child(even) > time {
-background-color: #ca9ce1;
-}
+
 .event-list > li > time > span {
-display: none;
+    display: none;
 }
 .event-list > li > time > .day {
-display: block;
-font-size: 56pt;
-font-weight: 100;
-line-height: 1;
+    display: block;
+    font-size: 56pt;
+    font-weight: 100;
+    line-height: 1;
+    margin-top: 10px;
 }
 .event-list > li time > .month {
-display: block;
-font-size: 24pt;
-font-weight: 900;
-line-height: 1;
+    display: block;
+    font-size: 24pt;
+    font-weight: 900;
+    line-height: 1;
 }
 .event-list > li > img {
-width: 100%;
+    width: 100%;
 }
 .event-list > li > .info {
-padding-top: 5px;
-text-align: center;
+/*    padding-top: 5px;*/
+    position: relative;
+    text-align: left;
+    height: 130px;   
+    padding-top: 10px;
+    padding-right: 5px;
+/*    padding-right: 5px;*/
 }
 .event-list > li > .info > .title {
-font-size: 14pt;
-font-weight: 500;
-margin: 0px;
-padding: 5px 10px 0px 10px;
+    color: #4F0E70;
+    font-size: 14pt;
+    font-weight: 600;
+    margin: 0px;
+/*    padding: 5px 10px 0px 10px;*/
 }
 .event-list > li > .info > .desc {
-font-size: 13pt;
-font-weight: 300;
-margin: 0px;
-padding: 5px 10px 5px 10px;
+    font-size: 13pt;
+    font-weight: 600;
+    margin: 0px;
+    line-height: 1.15;
+/*    padding: 5px 10px 5px 10px;*/
 }
 .event-list > li > .info > ul {
-display: table;
-list-style: none;
-margin: 10px 0px 0px;
-padding: 0px;
-width: 100%;
-text-align: center;
+    display: table;
+    list-style: none;
+    margin: 10px 0px 0px;
+    width: 100%;
+    text-align: center;
 }
 
 .event-list > li > .info > ul > li {
-display: table-cell;
-cursor: pointer;
-color: rgb(30, 30, 30);
-font-size: 11pt;
-font-weight: 300;
-		padding: 3px 0px;
+    display: table-cell;
+    cursor: pointer;
+    /*color: #4F0E70;*/
+    /*color: rgb(30, 30, 30);*/
+    font-size: 11pt;
+    font-weight: 300;
 }
 .event-list > li > .info > ul > li > a {
-display: block;
-width: 100%;
-color: rgb(30, 30, 30);
-text-decoration: none;
+    display: block;
+    width: 100%;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
 }
 
 .event-list > li > .info > ul > li:hover {
-color: rgb(30, 30, 30);
-background-color: rgb(200, 200, 200);
+    color: rgb(30, 30, 30);
+    background-color: rgb(200, 200, 200);
 }
 
+@media (max-width: 400px) {
+    .event-list > li {
+        height: 97.5px;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+        width: 90px;
+        height: 97.5px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .event-list > li > time > .day {
+        margin-top: 2.5px;
+        font-size: 46pt;
+    }
+    .event-list > li time > .month {
+        display: block;
+        font-size: 20pt;
+        font-weight: 900;
+        line-height: 1;
+    }
+    .event-list > li > .info {
+        padding-top: 5px;
+    }
+    .event-list > li > .info > .title {
+        font-size: 13px;
+    }
+    .event-list > li > .info > .desc {
+        font-size: 11pt;
+    /*    padding: 5px 10px 5px 10px;*/
+    }
+}
 
-@media (min-width: 768px) {
-
+@media (min-width: 992px) {
 	.event-list {
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
 	}
-.event-list > li {
-	margin: 5px 5px 10px;
-	float: left;
-	position: relative;
-	display: block;
-	width: 45%;
-	height: 130px;
-	padding: 0px;
-}
-.event-list > li > time,
-.event-list > li > img  {
-	display: inline-block;
-}
-.event-list > li > time,
-.event-list > li > img {
-	width: 130px;
-	float: left;
-}
-.event-list > li > .info {
-	background-color: rgb(245, 245, 245);
-	overflow: hidden;
-}
-.event-list > li > time,
-.event-list > li > img {
-	width: 130px;
-	height: 130px;
-	padding: 0px;
-	margin: 0px;
-}
-.event-list > li > .info {
-	position: relative;
-	height: 130px;
-	text-align: left;
-	padding-right: 0px;
-}
-.event-list > li > .info > .title,
-.event-list > li > .info > .desc {
-	padding: 5px 10px 0px 10px;
-}
-.event-list > li > .info > ul {
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
+    .event-list > li {
+        margin: 5px 7px 10px;
+        float: left;
+        width: 48.5%;
+/*        height: 130px;*/
+        padding: 0px;
+    }
+    .event-list > li > .info {
+    /* 	background-color: rgb(245, 245, 245);*/
+        overflow: hidden;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+        width: 120px;
+        height: 130px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .event-list > li > .info {
+        position: relative;
+        text-align: left;
+        height: 130px;        
+        padding-top: 10px;
+    }
+    .event-list > li > .info > .title,
+    .event-list > li > .info > .desc {
+        padding: 0px 0px 0px 5px;
+    }
+    .event-list > li > .info > ul {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
 }
