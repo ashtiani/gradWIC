@@ -213,6 +213,13 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
+  .navbar-custom .navbar-logo {
+    width: 100px;
+    height: 100px;
+    background: url(../img/logos/G1.png) no-repeat;
+    background-size: 100px auto;
+    color:#ca9ce1;
+  }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
