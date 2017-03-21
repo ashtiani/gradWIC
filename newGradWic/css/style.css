@@ -35,7 +35,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #A351CC;
 }
 h1,
 h2,
@@ -674,6 +674,9 @@ ul.social-buttons li a:active {
   height: 100%;
   width: auto;
 }
+
+
+
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -842,7 +845,7 @@ body {
 
 
 @media (min-width: 1200px) {
-.tabshow {
+. {
 
 display: block !important;
 
@@ -869,6 +872,8 @@ display: block !important;
 }
 .nav-tabs > li{
     margin-right: 1px;
+    font-weight: 900;
+/*    font-size: 16px;*/
 }
 .nav-tabs > li > a{
     border-radius: 0px;
@@ -904,6 +909,7 @@ display: block !important;
     color: #444;
 }
 .tab-content > .tab-pane{
+    font-weight: 700;
     border: 1px solid #e4e4e4;
     border-top: 0px none;
     padding: 20px;
@@ -915,6 +921,10 @@ display: block !important;
 
 .signup {
     padding-top: 25px;
+}
+
+.signup h3 {
+    padding-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -930,9 +940,9 @@ display: block !important;
     background-color: rgba(202, 156, 225, 0.4); /* #CA9CE1, 45% opacity */
 }
 
-/* font colors */
+/* font colors (actually only just officer names)*/
 .primary-purple {
-    color: #4F0E70;
+    color: #A351CC;
 }
 
 
@@ -1003,7 +1013,8 @@ display: block !important;
 /*    padding-right: 5px;*/
 }
 .event-list > li > .info > .title {
-    color: #4F0E70;
+    color: #A351CC;
+/*    color: #4F0E70;*/
     font-size: 14pt;
     font-weight: 600;
     margin: 0px;
