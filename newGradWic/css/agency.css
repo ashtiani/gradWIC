@@ -104,7 +104,7 @@ fieldset[disabled] .btn-primary.active {
   color: white;
   background-color: #ca9ce1;
   border-color: #ca9ce1;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
@@ -151,7 +151,16 @@ fieldset[disabled] .btn-xl.active {
   background-color: #222222;
   border-color: transparent;
 }
+
+.navbar-logo {
+    height: 100%;
+    width: auto;
+}
 .navbar-custom .navbar-brand {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 5px;
   color: white;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
@@ -167,7 +176,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-toggle {
   background-color: #ca9ce1;
   border-color: #ca9ce1;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 12px;
@@ -212,7 +221,10 @@ fieldset[disabled] .btn-xl.active {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+/*    width: 100px;*/
+/*    height: 100px;*/
   }
+    
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
@@ -247,10 +259,11 @@ header .intro-text {
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 22px;
-  line-height: 22px;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight:700;
+  font-size: 50px;
+  line-height: 50px;
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
@@ -263,23 +276,26 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
+    padding-top: 250px;
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 25px;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 3%;
+    text-align: left;
   }
   header .intro-text .intro-heading {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 75px;
+    font-weight: 70;
+    font-size: 24px;
+    line-height: 24px;
     margin-bottom: 50px;
+    text-align: left;
   }
 }
 section {
