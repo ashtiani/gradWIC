@@ -1110,6 +1110,26 @@ display: block !important;
         bottom: 0px;
     }
 }
+/* Get Involved (mailing list) */
+.form-control {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    color: #2A2A2A;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder {
+    color: grey !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: grey !important;  
+}
+
+input:-ms-input-placeholder {  
+    color: grey !important;  
+}
 
 /* Footer Section (includes social media icons) */
 .btn-outline {
@@ -1151,6 +1171,6 @@ footer .footer-col {
 }
 
 footer .footer-below {
-  padding: 25px 0;
+  padding: 10px 0;
   background-color: #b7b6c1;
 }
