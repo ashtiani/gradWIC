@@ -157,7 +157,7 @@ fieldset[disabled] .btn-xl.active {
     width: auto;
 }
 .navbar-custom .navbar-brand {
-  padding-top: 5px;
+  padding-top: 7px;
   padding-left: 10px;
   padding-bottom: 5px;
   padding-right: 5px;
@@ -257,27 +257,32 @@ header {
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
+  padding-left: 10px;
 }
 header .intro-text .intro-lead-in {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight:700;
-  font-size: 50px;
-  line-height: 50px;
-  margin-bottom: 25px;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 3%;
+    text-align: left;
 }
 header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
-  margin-bottom: 25px;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 70;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 50px;
+    margin-bottom: 25px;
+    text-align: left;
 }
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 250px;
     padding-bottom: 200px;
+    padding-left: 0px;
   }
   header .intro-text .intro-lead-in {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -286,15 +291,6 @@ header .intro-text .intro-heading {
     font-size: 50px;
     line-height: 50px;
     margin-bottom: 3%;
-    text-align: left;
-  }
-  header .intro-text .intro-heading {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 70;
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 50px;
     text-align: left;
   }
 }
