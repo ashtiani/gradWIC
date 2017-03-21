@@ -224,7 +224,7 @@ fieldset[disabled] .btn-xl.active {
 /*    width: 100px;*/
 /*    height: 100px;*/
   }
-    
+
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
@@ -541,18 +541,18 @@ section h3.section-subheading {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 31px 60px 55px 136px;
   }
   .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
+    width: 250px;
+    height: 250px;
+    margin-left: -129px;
   }
   .timeline > li .timeline-image h4 {
-    margin-top: 40px;
+    margin-top: 70px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 70px 82px 32px 42px;
   }
 }
 .team-member {
@@ -856,14 +856,11 @@ display: block !important;
 
 
 
-@media (max-width: 779px) {
+@media (max-width: 1119px) {
 .collapsedshow {
-
 	  display: block !important;
-
-
+		transition: all 0.3s ease-in 0s;
 }
-
 }
 
 .nav-tabs {
@@ -891,7 +888,6 @@ display: block !important;
     border-top: 2px solid #ededed;
     background: #ededed;
     color: #8f8f8f;
-    font-weight: bold;
 }
 .nav-tabs > li > a:hover{
     border-bottom-color: #ededed;
@@ -914,4 +910,8 @@ display: block !important;
 }
 .tab-content > .tab-pane > h3{
     margin-top: 0;
+}
+
+.signup {
+	padding-top: 100px;
 }
