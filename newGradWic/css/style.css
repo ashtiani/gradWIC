@@ -859,7 +859,7 @@ display: block !important;
 }
 
 #last-item{
-	display: none;
+/*	display: none;*/
 
 }
 }
@@ -914,8 +914,16 @@ display: block !important;
 }
 
 .signup {
-	padding-top: 100px;
+    padding-top: 25px;
 }
+
+@media (min-width: 1200px) {
+    .signup {
+        padding-top: 100px;
+    }
+}
+
+
 
 /* background colors */
 .bg-secondary {
