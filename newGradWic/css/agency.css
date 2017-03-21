@@ -151,7 +151,16 @@ fieldset[disabled] .btn-xl.active {
   background-color: #222222;
   border-color: transparent;
 }
+
+.navbar-logo {
+    height: 100%;
+    width: auto;
+}
 .navbar-custom .navbar-brand {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 5px;
   color: white;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
@@ -212,9 +221,10 @@ fieldset[disabled] .btn-xl.active {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    width: 100px;
-    height: 100px;
+/*    width: 100px;*/
+/*    height: 100px;*/
   }
+    
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
