@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 
 			for (var i in item) {
-
+                console.log(item);
 				var timeStr = item[i].start_time;
 				console.log(timeStr);
 				var date = new Date(dateFromISO8601(timeStr));

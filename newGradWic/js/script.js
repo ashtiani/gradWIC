@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 		var pageAccessToken = '1725085547782495|WqVV4TPMJ_43akU69-r82PXB9g0';
 
-		FB.api('/ucsdgradwic/events?fields=cover,id,start_time,name,description,place', {
+		FB.api('/ucsdgradwic/events?fields=cover,id,start_time,name,description,place, link', {
 			access_token: pageAccessToken
 		}, function(response) {
 			console.log(response);
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 
 			for (var i in item) {
-
+                console.log(item);
 				var timeStr = item[i].start_time;
 				console.log(timeStr);
 				var date = new Date(dateFromISO8601(timeStr));
@@ -67,7 +67,7 @@ $(document).ready(function() {
 
 
 
-					output+= "<p class=\"desc\">"+eventPlaceName+"<br>"+"Time: "+eventTime+"</p>"+"</div>"
+					output+= "<p class=\"desc\">"+eventPlaceName+"<br>"+"Time: "+eventTime + "<br><a style=\'color: #A351CC\' target=\'_blank\' href=\'http://facebook.com/" + item[i].id + "\'>RSVP</a></p>"+"</div>"
 
 					output+="</li>";
 
