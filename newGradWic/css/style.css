@@ -852,7 +852,7 @@ body {
 
 
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
 .collapsedshow {
 	  display: block !important;
 
@@ -1140,11 +1140,11 @@ input::-webkit-input-placeholder {
 }
 
 input::-moz-placeholder {  /* Firefox 19+ */
-    color: grey !important;  
+    color: grey !important;
 }
 
-input:-ms-input-placeholder {  
-    color: grey !important;  
+input:-ms-input-placeholder {
+    color: grey !important;
 }
 
 /* Footer Section (includes social media icons) */
